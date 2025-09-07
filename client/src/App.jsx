@@ -1,0 +1,22 @@
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
+
+function App() {
+
+
+  return (
+    <div className='min-h-screen  flex flex-col'>
+      <Header />
+        <main className='flex-grow'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </main>
+      <Footer />
+    </div>
+  )
+}
+
+export default App
